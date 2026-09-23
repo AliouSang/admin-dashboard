@@ -7,7 +7,7 @@ The goal of this project is not to build a fully functional **Admin Dashboard**,
 ![Admin Dashboard Screenshot](screenshot.png)
 
 ## Live Demo
-[View Live Admin Dashboard] ()
+[View Live Admin Dashboard] (https://aliousang.github.io/admin-dashboard/)
 
 ## Features
 
