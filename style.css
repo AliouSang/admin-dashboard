@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(200px, 250px) minmax(auto, 4fr);
+  grid-template-rows: 1fr 4fr;
+  border-radius: 6px;
+}
+
+.sidebar {
+  background-color: dodgerblue;
+  color: white;
+  grid-row: 1 / -1;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 1rem;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  gap: 0.4rem;
+}
+
+.dashboard {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  margin-left: -10px;
+}
+
+.community {
+  margin-bottom: 3rem;
+}
+
+.header {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 1rem 2.5rem;
+}
+
+.first-row {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+}
+
+.first-row > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.first-row .user-name {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.header svg {
+  font-size: 24px;
+}
+
+.header input {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.medecin-ball-1 {
+  width: 32px;
+}
+
+.medecin-ball-2 {
+  width: 44px
+}
+
+.second-row {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+}
+
+.second-row > div:first-child {
+  display: flex;
+  gap: 1rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: rgb(10, 78, 147);
+}
+
+.main-content {
+  background-color: hsl(210, 100%, 97%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  padding: 1rem 2.5rem;
+  gap: 1rem;
+  box-shadow: 0px -3px 5px #ddd;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.projects {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.announcements {
+  grid-column: 3 / 4;
+  grid-row: 1;
+}
+
+.cards {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1f 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  border-left: 4px solid yellow;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 1fr 30px;
+}
+
+.card h3 {
+  grid-row: 1;
+}
+
+.card p {
+  grid-row: 2 / 3;
+}
+
+.small-icon {
+  grid-row: 3 / 4;
+  align-self: end;
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.annoucements-container {
+  grid-column: 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 50px repeat(4, 1fr);
+}
+
+.maintenance {
+  grid-row: 1 / 2;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+
+hr {
+  margin-block: 1rem;  
+}
+
+.trending-title {
+  grid-row: 2 / 3;
+  padding-block: 1rem;
+}
+
+.trendings {
+  grid-row: 3 / 4;
+  display: grid;
+  gap: 2rem;
+}
+
+.trendings > div {
+  display: flex;
+  background-color: white;
+  border-radius: 6px;
+  gap: 1rem;
+  padding: 0.6rem;
+}
+
+.trendings > div p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.first img {
+  background-color: rgba(0, 128, 0, 0.3);
+}
+
+.second img {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.third img {
+  background-color: rgba(0, 0, 255, 0.4);
+}
+
+.last img {
+  background-color: rgba(0, 0, 0, 0.4);
+} 
+
+.first img,
+.second img,
+.third img, 
+.last img {
+  padding: 0.4rem;
+  border-radius: 50%;
+} 
+
+
+.trendings p {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.africa {
+  width: 40px;
+}
+
